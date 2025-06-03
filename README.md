@@ -65,6 +65,6 @@ npm start
 
 # My Project
 
-![Screenshot](images/ss-1.png)
-![Screenshot](images/ss-2.png)
+![Screenshot](ss-1.png)
+![Screenshot](ss-2.png)
 
