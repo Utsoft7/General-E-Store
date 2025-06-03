@@ -1,36 +1,64 @@
 # MERN E-Commerce Store
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-
 A full-stack e-commerce platform built with the MERN stack (MongoDB, Express.js, React.js, Node.js) featuring user authentication, product management, shopping cart, and admin dashboard.
 
-![E-Commerce Demo](https://example.com/demo-gif.gif) <!-- Add your demo GIF link -->
+---
 
 ## Features
 
-**User Features:**
-- Product browsing with categories/filters
+- User authentication (register/login)
+- Product browsing with categories and search
 - Shopping cart functionality
-- User authentication (login/register)
-- Order history tracking
+- Order history for users
 - Product reviews and ratings
-- Payment gateway integration (Stripe/PayPal)
+- Admin dashboard for managing products, orders, and users
 
-**Admin Features:**
-- Product management (CRUD operations)
-- Order management
-- User management
-- Sales analytics dashboard
-- Inventory management
+---
 
 ## Tech Stack
 
-- **Frontend**: React.js, Redux Toolkit, React Router, Tailwind CSS
-- **Backend**: Node.js, Express.js, MongoDB, Mongoose
-- **Authentication**: JWT, bcrypt
-- **Payment**: Stripe API
-- **Deployment**: Vercel (Frontend), Render (Backend)
+- **Frontend:** React.js, Redux Toolkit, React Router, CSS (or Tailwind/Bootstrap)
+- **Backend:** Node.js, Express.js, MongoDB, Mongoose
+- **Authentication:** JWT, bcrypt
 
-## Installation
+---
 
-### 1. Clone Repository
+## Getting Started
+
+### 1. Clone the Repository
+
+
+### 2. Install Dependencies
+
+**Backend:**
+
+**Frontend:**
+
+---
+
+### 3. Configure Environment Variables
+MONGO_URI=mongodb+srv://<username>:<password>@cluster0.mongodb.net/ecommerce?retryWrites=true&w=majority
+JWT_SECRET=your_jwt_secret_key
+PORT=5000
+Create a `.env` file inside the `server` directory:
+
+
+- Replace `<username>` and `<password>` with your MongoDB Atlas credentials.
+- Set `JWT_SECRET` to a secure random string.
+
+---
+
+### 4. Run the Application
+
+**Start the backend server:**
+
+
+cd server
+npm start
+**Start the frontend development server:**
+
+
+cd ../client
+npm start
+- Frontend runs at: `http://localhost:3000`
+- Backend API runs at: `http://localhost:5000/api`
